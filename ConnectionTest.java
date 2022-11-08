@@ -1,4 +1,4 @@
-package com.min.project.java.quiz;
+package com.quiz.connection;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -10,7 +10,7 @@ public class ConnectionTest {
 	public Connection getConnectionDetails() throws SQLException {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/MiniProject", "root", "Vaibhav@242");
+			connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/quiz_data", "root", "Jbg@12345");
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}
